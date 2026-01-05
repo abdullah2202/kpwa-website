@@ -30,8 +30,8 @@ export default function Events() {
             </div>
           )}
 
-          <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 text-sm text-slate-600 shadow-soft">
-            <p className="font-semibold text-slate-900">Future enhancement ideas</p>
+          <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 text-sm text-slate-600 shadow-soft dark:bg-slate-950 dark:border-slate-800 dark:text-slate-300">
+            <p className="font-semibold text-slate-900 dark:text-slate-600">Future enhancement ideas</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Event RSVP / registrations (API-backed)</li>
               <li>Google Calendar embed or ICS downloads</li>

@@ -14,9 +14,9 @@ export default function Contact() {
           />
 
           <div className="grid gap-4 md:grid-cols-2">
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-950">
               <h3 className="text-lg font-bold text-slate-900">Contact details</h3>
-              <p className="mt-2 text-slate-600">
+              <p className="mt-2 text-slate-600 dark:text-slate-300">
                 Add an email address, phone number, and/or postal address here.
               </p>
 
@@ -26,18 +26,18 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="font-semibold">Email:</span>{" "}
-                  <span className="text-slate-500">info@kpwa.co.uk (placeholder)</span>
+                  <span className="text-slate-500 dark:text-slate-400">info@kpwa.co.uk (placeholder)</span>
                 </div>
                 <div>
                   <span className="font-semibold">Location:</span>{" "}
-                  <span className="text-slate-500">United Kingdom</span>
+                  <span className="text-slate-500 dark:text-slate-400">United Kingdom</span>
                 </div>
               </div>
             </div>
 
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-950">
               <h3 className="text-lg font-bold text-slate-900">Note</h3>
-              <p className="mt-2 text-slate-600">
+              <p className="mt-2 text-slate-600 dark:text-slate-300">
                 This static site doesn’t send messages yet. When you add a backend API,
                 we can enable:
               </p>

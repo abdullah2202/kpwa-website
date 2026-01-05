@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="bg-gradient-to-b from-white to-slate-50">
+      <div className="bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
         <Container>
           <div className="py-12 sm:py-16">
             <div className="grid items-center gap-10 md:grid-cols-2">
@@ -24,10 +24,10 @@ export default function Home() {
                 <p className="inline-flex items-center rounded-full bg-slate-100 px-4 py-1 text-sm font-semibold text-slate-700">
                   {SITE.domain}
                 </p>
-                <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+                <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-600">
                   Khyber Pukhtoon Welfare Association
                 </h1>
-                <p className="mt-4 max-w-xl text-base text-slate-600 sm:text-lg">
+                <p className="mt-4 max-w-xl text-base text-slate-600 sm:text-lg dark:text-slate-300">
                   A community association supporting welfare initiatives, engagement,
                   and collaboration. Access the constitution, meeting minutes, and
                   membership forms — and stay updated on upcoming events.
@@ -48,12 +48,12 @@ export default function Home() {
                   </Link>
                 </div>
 
-                <div className="mt-6 text-sm text-slate-500">
+                <div className="mt-6 text-sm text-slate-500 dark:text-slate-400">
                   This site is static today, and ready to connect to an API later.
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-950">
                 <SectionTitle
                   eyebrow="Quick Links"
                   title="Most requested documents"
@@ -67,7 +67,7 @@ export default function Home() {
                 <div className="mt-4">
                   <Link
                     to="/documents"
-                    className="text-sm font-semibold text-slate-800 hover:underline"
+                    className="text-sm font-semibold text-slate-800 hover:underline dark:text-slate-500"
                   >
                     See all documents →
                   </Link>

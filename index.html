@@ -8,8 +8,22 @@
       name="description"
       content="KPWA — Constitution, meeting minutes, membership forms, and community events."
     />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme"); // "light" | "dark" | null
+          var prefersDark =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+          var theme = stored || (prefersDark ? "dark" : "light");
+          document.documentElement.classList.toggle("dark", theme === "dark");
+        } catch (e) {}
+      })();
+    </script>
+
   </head>
-  <body class="bg-slate-50 text-slate-900">
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
