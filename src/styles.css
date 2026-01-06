@@ -9,3 +9,7 @@
 a {
   text-decoration: none;
 }
+
+html.dark body {
+  background-color: rgb(2 6 23); /* slate-950 */
+}

@@ -13,8 +13,8 @@ export default function About() {
             subtitle="A simple overview page — adjust text to match KPWA’s mission and objectives."
           />
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-            <div className="prose max-w-none prose-slate">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-950 dark:text-slate-300">
+            <div className="prose max-w-none prose-slate dark:prose-invert">
               <p>
                 <strong>{SITE.name} (KPWA)</strong> is a community association focused
                 on welfare, community support, and engagement. This website provides

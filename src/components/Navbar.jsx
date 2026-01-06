@@ -2,11 +2,15 @@ import { NavLink, Link } from "react-router-dom";
 import { useMemo, useState } from "react";
 import logo from "../assets/khyber.jpg";
 import { SITE } from "../lib/config";
+import ThemeToggle from "./ThemeToggle";
+
 
 const navItemBase =
-  "rounded-lg px-3 py-2 text-sm font-medium transition hover:bg-slate-100";
-const navItemActive = "bg-slate-100 text-slate-900";
-const navItemInactive = "text-slate-700";
+  "rounded-lg px-3 py-2 text-sm font-medium transition hover:bg-slate-100 dark:hover:bg-slate-800";
+const navItemActive =
+  "bg-slate-100 text-slate-900 dark:bg-slate-800 dark:text-slate-100";
+const navItemInactive = "text-slate-700 dark:text-slate-200";
+
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -23,7 +27,7 @@ export default function Navbar() {
   );
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/70">
       <div className="mx-auto max-w-6xl px-4">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
@@ -40,22 +44,25 @@ export default function Navbar() {
             </div>
           </Link>
 
-          <nav className="hidden items-center gap-1 md:flex">
-            {links.map((l) => (
-              <NavLink
-                key={l.to}
-                to={l.to}
-                className={({ isActive }) =>
-                  `${navItemBase} ${isActive ? navItemActive : navItemInactive}`
-                }
-              >
-                {l.label}
-              </NavLink>
-            ))}
-          </nav>
+          <div className="hidden items-center gap-2 md:flex">
+            <nav className="flex items-center gap-1">
+              {links.map((l) => (
+                <NavLink
+                  key={l.to}
+                  to={l.to}
+                  className={({ isActive }) =>
+                    `${navItemBase} ${isActive ? navItemActive : navItemInactive}`
+                  }
+                >
+                  {l.label}
+                </NavLink>
+              ))}
+            </nav>
+            <ThemeToggle />
+          </div>
 
           <button
-            className="inline-flex items-center justify-center rounded-lg border border-slate-200 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 md:hidden"
+            className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800 md:hidden"
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-label="Toggle menu"
@@ -80,6 +87,9 @@ export default function Navbar() {
                 </NavLink>
               ))}
             </nav>
+            <div className="mt-2">
+              <ThemeToggle className="w-full justify-center" />
+            </div>
           </div>
         ) : null}
       </div>

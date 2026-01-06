@@ -17,7 +17,7 @@ export default function Documents() {
           <div className="space-y-10">
             {documentSections.map((section) => (
               <div key={section.title}>
-                <h3 className="text-lg font-bold text-slate-900">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-slate-600">
                   {section.title}
                 </h3>
                 <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
