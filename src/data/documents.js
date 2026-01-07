@@ -1,5 +1,22 @@
 export const documentSections = [
   {
+    title: "Membership",
+    items: [
+      {
+        title: "Membership Form",
+        description: "Fill in to apply for a membership.",
+        href: "/pdfs/membership-form.pdf",
+        tag: "PDF"
+      },
+      {
+        title: "Membership Agreement",
+        description: "Agree to the Terms and Conditions.",
+        href: "/pdfs/membership-agreement.pdf",
+        tag: "PDF"
+      }
+    ]
+  },
+  {
     title: "Governing Documents",
     items: [
       {
@@ -59,23 +76,6 @@ export const documentSections = [
         description: "Resolutions made in 2023",
         href: "/pdfs/resolutions-2023",
         tags: "PDF"
-      }
-    ]
-  },
-  {
-    title: "Membership",
-    items: [
-      {
-        title: "Membership Form",
-        description: "Fill in to apply for a membership.",
-        href: "/pdfs/membership-form.pdf",
-        tag: "PDF"
-      },
-      {
-        title: "Membership Agreement",
-        description: "Agree to the Terms and Conditions.",
-        href: "/pdfs/membership-agreement.pdf",
-        tag: "PDF"
       }
     ]
   }

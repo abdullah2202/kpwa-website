@@ -11,7 +11,7 @@ export default function Documents() {
           <SectionTitle
             eyebrow="Library"
             title="Documents & Forms"
-            subtitle="Click to open or download PDFs. Add files into public/pdfs and update src/data/documents.js."
+            subtitle="Click to open or download PDFs."
           />
 
           <div className="space-y-10">
