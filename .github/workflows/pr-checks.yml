@@ -5,7 +5,8 @@ on:
     branches: [dev, main]
 
 jobs:
-  build:
+  pr_build:
+    name: pr-build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
