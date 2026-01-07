@@ -10,7 +10,7 @@ export default function About() {
           <SectionTitle
             eyebrow="About"
             title="Who we are"
-            subtitle="A simple overview page — adjust text to match KPWA’s mission and objectives."
+            subtitle="KPWA’s mission and objectives."
           />
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-950 dark:text-slate-300">

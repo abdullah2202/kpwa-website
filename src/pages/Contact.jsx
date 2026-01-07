@@ -10,14 +10,14 @@ export default function Contact() {
           <SectionTitle
             eyebrow="Contact"
             title="Get in touch"
-            subtitle="Replace placeholders with official KPWA contact details."
+            subtitle=""
           />
 
           <div className="grid gap-4 md:grid-cols-2">
             <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-950">
               <h3 className="text-lg font-bold text-slate-900">Contact details</h3>
               <p className="mt-2 text-slate-600 dark:text-slate-300">
-                Add an email address, phone number, and/or postal address here.
+              {/*  Add an email address, phone number, and/or postal address here. */}
               </p>
 
               <div className="mt-4 space-y-2 text-sm text-slate-700">
@@ -26,7 +26,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="font-semibold">Email:</span>{" "}
-                  <span className="text-slate-500 dark:text-slate-400">info@kpwa.co.uk (placeholder)</span>
+                  <span className="text-slate-500 dark:text-slate-400">info@kpwa.co.uk</span>
                 </div>
                 <div>
                   <span className="font-semibold">Location:</span>{" "}
@@ -34,7 +34,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-
+            {/*
             <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-950">
               <h3 className="text-lg font-bold text-slate-900">Note</h3>
               <p className="mt-2 text-slate-600 dark:text-slate-300">
@@ -46,7 +46,7 @@ export default function Contact() {
                 <li>Member authentication</li>
                 <li>Private documents and announcements</li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </Container>
