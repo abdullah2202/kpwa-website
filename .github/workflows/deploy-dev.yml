@@ -35,9 +35,15 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
 
       # Upload everything with default cache
-      - name: Sync site to S3
+      - name: Sync site to S3 (everything except index.html)
         run: |
-          aws s3 sync dist "s3://${{ secrets.S3_BUCKET_DEV }}" --delete
+          aws s3 sync dist "s3://${{ secrets.S3_BUCKET_DEV }}" --delete --exclude "index.html"
+      
+      - name: Cache static assetss for 1 year (Vite /assets)
+        run: |
+          aws s3 sync "dist/assets" "s3://${{ secrets.S3_BUCKET_DEV }}/assets" \
+            --delete \
+            --cache-control "public,max-age=31536000,immutable"
 
       # Ensure index.html is not cached aggressively (so releases show up quickly)
       - name: Set cache-control for index.html
@@ -47,8 +53,8 @@ jobs:
             --content-type "text/html" \
             --metadata-directive "REPLACE"
 
-      - name: CloudFront Invalidation
+      - name: CloudFront Invalidation (index only)
         run: |
           aws cloudfront create-invalidation \
             --distribution-id "${{ secrets.CLOUDFRONT_DIST_ID_DEV }}" \
-            --paths "/*"
+            --paths "/index.html"
