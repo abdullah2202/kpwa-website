@@ -74,13 +74,8 @@ data "aws_iam_policy_document" "deploy_dev_policy" {
     resources = ["arn:aws:s3:::${var.dev_bucket_name}/*"]
   }
   statement {
-    actions   = ["cloudfront:CreateInvalidation"]
-    resources = ["*"]
-    condition {
-      test     = "StringEquals"
-      variable = "cloudfront:DistributionId"
-      values   = [var.dev_cloudfront_distribution_id]
-    }
+    actions = ["cloudfront:CreateInvalidation"]
+    resources = ["arn:aws:cloudfront::${data.aws_caller_identity.current.account_id}:distribution/${var.dev_cloudfront_distribution_id}"]
   }
 }
 
@@ -111,12 +106,7 @@ data "aws_iam_policy_document" "deploy_prod_policy" {
   }
   statement {
     actions   = ["cloudfront:CreateInvalidation"]
-    resources = ["*"]
-    condition {
-      test     = "StringEquals"
-      variable = "cloudfront:DistributionId"
-      values   = [var.prod_cloudfront_distribution_id]
-    }
+    resources = ["arn:aws:cloudfront::${data.aws_caller_identity.current.account_id}:distribution/${var.prod_cloudfront_distribution_id}"]
   }
 }
 

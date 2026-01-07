@@ -15,7 +15,7 @@ export default function Events() {
           <SectionTitle
             eyebrow="Calendar"
             title="Upcoming Events"
-            subtitle="Update events in src/data/events.js. Later this can come from an API."
+            subtitle=""
           />
 
           {sorted.length ? (
@@ -29,7 +29,7 @@ export default function Events() {
               No upcoming events listed yet.
             </div>
           )}
-
+          {/*}
           <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 text-sm text-slate-600 shadow-soft dark:bg-slate-950 dark:border-slate-800 dark:text-slate-300">
             <p className="font-semibold text-slate-900 dark:text-slate-600">Future enhancement ideas</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -37,7 +37,7 @@ export default function Events() {
               <li>Google Calendar embed or ICS downloads</li>
               <li>Admin-only event management (auth + API)</li>
             </ul>
-          </div>
+          </div>*/}
         </div>
       </Container>
     </main>

@@ -26,11 +26,6 @@ export default function About() {
                 from the Documents section. Upcoming events are listed in the Events
                 section.
               </p>
-              <p>
-                Today the site is static (fast, reliable, and easy to maintain). In the
-                future, it can integrate with an API backend for member-only areas,
-                event registration, or secure document management.
-              </p>
             </div>
           </div>
         </div>
