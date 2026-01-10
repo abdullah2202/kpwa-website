@@ -1,5 +1,22 @@
 export const documentSections = [
   {
+    title: "Membership",
+    items: [
+      {
+        title: "Membership Form",
+        description: "Fill in to apply for a membership.",
+        href: "/pdfs/membership-form.pdf",
+        tag: "PDF"
+      },
+      {
+        title: "Membership Agreement",
+        description: "Agree to the Terms and Conditions.",
+        href: "/pdfs/membership-agreement.pdf",
+        tag: "PDF"
+      }
+    ]
+  },
+  {
     title: "Governing Documents",
     items: [
       {
@@ -11,30 +28,54 @@ export const documentSections = [
     ]
   },
   {
-    title: "Meeting Minutes",
+    title: "AGM Minutes",
     items: [
       {
-        title: "Meeting Minutes — Jan 2025",
-        description: "Summary and decisions recorded for January 2025.",
-        href: "/pdfs/minutes-2025-01.pdf",
+        title: "Annual General Meeting Minutes - 2025",
+        description: "Summary and decisions recorded for AGM 2025.",
+        href: "/pdfs/agm-2025.pdf",
         tag: "PDF"
       },
       {
-        title: "Meeting Minutes — Feb 2025",
-        description: "Summary and decisions recorded for February 2025.",
-        href: "/pdfs/minutes-2025-02.pdf",
+        title: "Annual General Meeting Minutes - 2024",
+        description: "Summary and decisions recorded for AGM 2024.",
+        href: "/pdfs/agm-2024.pdf",
+        tag: "PDF"
+      },
+      {
+        title: "Annual General Meeting Minutes - 2023",
+        description: "Summary and decisions recorded for AGM 2023.",
+        href: "/pdfs/agm-2023.pdf",
+        tag: "PDF"
+      },
+      {
+        title: "Annual General Meeting Minutes - 2022",
+        description: "Summary and decisions recorded for AGM 2022.",
+        href: "/pdfs/agm-2022.pdf",
+        tag: "PDF"
+      },
+      {
+        title: "Annual General Meeting Minutes - 2020",
+        description: "Summary and decisions recorded for AGM 2020.",
+        href: "/pdfs/agm-2020.pdf",
         tag: "PDF"
       }
     ]
   },
   {
-    title: "Membership",
+    title: "Resolutions",
     items: [
       {
-        title: "Membership Form",
-        description: "Fill in to apply or renew membership.",
-        href: "/pdfs/membership-form.pdf",
-        tag: "PDF"
+        title: "Resolutions for 2024",
+        description: "Resolutions made in 2024",
+        href: "/pdfs/resolutions-2024",
+        tags: "PDF"
+      },
+      {
+        title: "Resolutions for 2023",
+        description: "Resolutions made in 2023",
+        href: "/pdfs/resolutions-2023",
+        tags: "PDF"
       }
     ]
   }

@@ -49,7 +49,7 @@ export default function Home() {
                 </div>
 
                 <div className="mt-6 text-sm text-slate-500 dark:text-slate-400">
-                  This site is static today, and ready to connect to an API later.
+                  
                 </div>
               </div>
 
@@ -57,7 +57,7 @@ export default function Home() {
                 <SectionTitle
                   eyebrow="Quick Links"
                   title="Most requested documents"
-                  subtitle="Add or update PDFs anytime in the /public/pdfs folder."
+                  subtitle=""
                 />
                 <div className="grid gap-4">
                   {featuredDocs.map((d) => (
