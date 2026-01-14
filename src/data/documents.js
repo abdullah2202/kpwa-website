@@ -31,6 +31,12 @@ export const documentSections = [
     title: "AGM Minutes",
     items: [
       {
+        title: "Annual General Meeting Minutes - 2026",
+        description: "Summary and decisions recorded for AGM 2026.",
+        href: "/pdfs/agm-2026.pdf",
+        tag: "PDF"
+      },
+      {
         title: "Annual General Meeting Minutes - 2025",
         description: "Summary and decisions recorded for AGM 2025.",
         href: "/pdfs/agm-2025.pdf",
@@ -68,13 +74,13 @@ export const documentSections = [
       {
         title: "Resolutions for 2024",
         description: "Resolutions made in 2024",
-        href: "/pdfs/resolutions-2024",
+        href: "/pdfs/resolutions-2024.pdf",
         tags: "PDF"
       },
       {
         title: "Resolutions for 2023",
         description: "Resolutions made in 2023",
-        href: "/pdfs/resolutions-2023",
+        href: "/pdfs/resolutions-2023.pdf",
         tags: "PDF"
       }
     ]
