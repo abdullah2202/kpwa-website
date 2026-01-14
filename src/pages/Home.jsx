@@ -83,7 +83,7 @@ export default function Home() {
           <SectionTitle
             eyebrow="Events"
             title="Upcoming"
-            subtitle="Dates/venues can be updated in one place (src/data/events.js)."
+            subtitle=""
           />
           {featuredEvents.length ? (
             <div className="grid gap-4 md:grid-cols-2">
